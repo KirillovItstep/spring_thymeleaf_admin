@@ -14,8 +14,8 @@ import java.util.List;
             return roleRepository.findAll();
         }
 
-        public Role save(Role firm) {
-            return roleRepository.save(firm);
+        public Role save(Role role) {
+            return roleRepository.save(role);
         }
 
         public Role findById(Long id) {
