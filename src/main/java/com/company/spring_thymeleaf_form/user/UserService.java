@@ -7,21 +7,21 @@ import java.util.List;
 @Service
     public class UserService {
         @Autowired
-        private UserRepository osRepository;
+        private UserRepository userRepository;
 
         public List<User> findAll() {
-            return osRepository.findAll();
+            return userRepository.findAll();
         }
 
-        public User save(User os) {
-           return osRepository.save(os);
+        public User save(User user) {
+           return userRepository.save(user);
         }
 
         public User findById(Long id) {
-            return osRepository.findById(id).get();
+            return userRepository.findById(id).get();
         }
 
         public void deleteById(Long id) {
-            osRepository.deleteById(id);
+            userRepository.deleteById(id);
         }
     }

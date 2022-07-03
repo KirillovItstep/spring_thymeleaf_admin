@@ -5,7 +5,7 @@ drop table if exists user;
 CREATE TABLE role(id INTEGER NOT NULL AUTO_INCREMENT,
                 name TEXT NOT NULL);
 
-CREATE TABLE user(id INTEGER NOT NULL AUTO_INCREMENT,
+CREATE TABLE users(id INTEGER NOT NULL AUTO_INCREMENT,
                   username TEXT NOT NULL,
                   password TEXT NOT NULL,
                   email TEXT NOT NULL,
